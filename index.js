@@ -1,13 +1,24 @@
 /**
  * @file ie6fixed
  *
- * 我们依靠css expression来做性能更好的fixed效果
- * 虽然这种性能也很差, 但是要好过基于滚动事件的.
+ * 我们使用css expression来完成position:fixed
+ * 虽然这种性能也很差, 但是要好过基于滚动事件的实现
  *
+ * 奇技淫巧
  * @author Leon(leonlu@outlook.com)
  */
 
-(function () {
+(function (root, factory) {
+    if (typeof define === 'function' && define.amd) {
+        define('ie6fixed', factory);
+    }
+    else if (typeof module === 'object' && module.exports) {
+        module.exports = root.ie6fixed = factory();
+    }
+    else {
+        root.ie6fixed = factory();
+    }
+}(this, function () {
 
     var isIe6 = !window.XMLHttpRequest;
 
@@ -47,8 +58,8 @@
 
     /**
      * 弄一下数值
-     * @param  {string} operand     被操作数
      * @param  {string} coefficient 系数
+     * @param  {string} operand     被操作数
      * @return {string}
      */
     function getPercentStyleValue(coefficient, operand) {
@@ -126,7 +137,7 @@
         return horizontalStyle;
     }
 
-    function fixed(element, options) {
+    return function (element, options) {
         if (!isIe6) {
             return;
         }
@@ -136,13 +147,6 @@
         for (var name in style) {
             element.style.setExpression(name, style[name]);
         }
-    }
+    };
 
-    if (typeof define === 'function' && define.amd) {
-        define('ie6fixed', [], fixed);
-    }
-    else {
-        window.ie6fixed = fixed;
-    }
-
-})();
+}));

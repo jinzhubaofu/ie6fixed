@@ -1,0 +1,24 @@
+{
+  "name": "ie6fixed",
+  "version": "1.0.0",
+  "description": "position:fixed in ie6",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jinzhubaofu/ie6fixed.git"
+  },
+  "keywords": [
+    "position",
+    "fixed",
+    "ie6"
+  ],
+  "author": "leonlu@outlook.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jinzhubaofu/ie6fixed/issues"
+  },
+  "homepage": "https://github.com/jinzhubaofu/ie6fixed"
+}

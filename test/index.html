@@ -2,9 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>ie7fixed test</title>
+    <title>ie6 position fixed demo</title>
     <style>
-
     body {
         padding: 0;
         margin: 0;
@@ -61,13 +60,18 @@
     #sider {
         position: fixed;
         width: 30px;
-        top: 50px;
+        top: 80px;
         bottom: 50px;
-        right: 0;
+        right: 10px;
         background-color: #ccc;
     }
 
     #mask {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
         color: #fff;
         background-color: #000;
         opacity: .5;
@@ -75,10 +79,13 @@
     }
 
     #dialog {
-        width: 100px;
-        height: 100px;
-        margin-left: -50px;
-        margin-top: -50px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        width: 200px;
+        height: 200px;
+        margin-left: -100px;
+        margin-top: -100px;
         color: #000;
         text-align: center;
         background-color: #fff;

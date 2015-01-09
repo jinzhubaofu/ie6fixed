@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ie6 position fixed demo</title>
+    <style>
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    #container {
+        width: 980px;
+        margin: 50px auto;
+    }
+
+    #container h2 {
+        font-weight: 700;
+        font-size: 36px;
+        font-family: jaf-bernino-sans, 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Verdana, sans-serif;
+    }
+
+    #container h4 {
+        color: #666;
+        font-size: 20px;
+        font-family: jaf-bernino-sans, 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Verdana, sans-serif;
+    }
+
+    #container a {
+        color: #666;
+    }
+
+    #container p {
+        margin-top: 10px;
+        font-size: 22px;
+        line-height: 30px;
+        font-family: freight-text-pro, Georgia, Cambria, 'Times New Roman', Times, serif;
+    }
+
+    .fixed {
+        position: fixed;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        background-color: #eee;
+    }
+
+    #nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 30px;
+        line-height: 30px;
+        background-color: #ccc;
+        text-align: center;
+    }
+
+    #sider {
+        position: fixed;
+        width: 30px;
+        top: 80px;
+        bottom: 50px;
+        right: 10px;
+        background-color: #ccc;
+    }
+
+    #mask {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        color: #fff;
+        background-color: #000;
+        opacity: .5;
+        filter: alpha(opacity=50);
+    }
+
+    #dialog {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        width: 200px;
+        height: 200px;
+        margin-left: -100px;
+        margin-top: -100px;
+        color: #000;
+        text-align: center;
+        background-color: #fff;
+    }
+
+    #dialog p {
+        line-height: 20px;
+        margin: 0;
+    }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h2>Let's</h2>
+        <h4>source: <a target="_blank" href="https://medium.com/why-you-should/lets-8a8ffb614ee3">https://medium.com/why-you-should/lets-8a8ffb614ee3</a></h4>
+        <p>Let’s tell him what his name means someday. That he’s named that because his mom’s last name means olive just like his first name, and we randomly found that amazing when we both high fived over coming to an agreement on it.</p>
+
+        <p>Let’s tell him that his middle name is the same as uncle Ford’s, because uncle Ford got that name just like him from a bunch of others just like him in the family. Let’s tell him that the name means something to us, just like his uncle does. And that he’s the next great little man sporting that name.</p>
+
+        <p>Let’s make sure he knows his name has nothing to do with the cars, though, which are wildly unreliable and sort of uncomfortable. And they partnered with Microsoft on an electronic, which should have been a red flag.</p>
+
+        <p>Let’s tell him that we had hoped he’d be a girl, and when we found out he was a boy, we were shocked at how it really doesn’t matter what he is, just that he’s ours. (Let’s tell him that it was silent in that room for a minute though, because god damn if we didn’t have a hell of a name for him if he was a her.)</p>
+
+        <p>Let’s tell him not to tell his sister that when she gets that name years from now. Because that’d be awkward and they’ll fight about it and GO TO YOUR ROOMS, STOP PULLING EACH OTHER’S HAIR.</p>
+
+        <p>Let’s tell him to be a gentleman when he meets girls and falls in love with all 4,302 of them that cross his path. To treat them well and to be as overly emotional as his father. Let’s tell him to be a gentleman to gentlemen if that’s what he prefers, too. Let’s tell him that whoever he loves, we love, because he’s our little man no matter what kind of man he becomes. He could like alligators for all we care, but those would be hard to have over for dinner. And they would eat him. Let’s at least warn him about that.</p>
+
+        <p>Let’s tell him about our faults when he’s old enough to understand. All of them. The ones that hurt to talk about, and the ones that make us laugh. Let’s tell him he’s just like his dad when he inevitably puts his towel on the bed, and that it wouldn’t kill him to make his bed because wouldn’t it be nice if he came home and saw a made bed and got to get in that made bed? On that note, let’s tell him sorry he’s OCD like his dad, too.</p>
+
+        <p>Let’s tell him why we’re not married yet, and that that’s okay. That dad screwed up, and that while that’s not okay, that’s okay, too: mom and dad will screw up from time to time because they’re just people, and people tend to do that. Let’s tell him that the one thing we’ll never screw up on is loving the bejesus out of him. And doing laundry. We’re really good at that in this family. If people make fun of him for that? Screw them, they don’t know the joy of a fresh linen breeze on their arm.</p>
+
+        <p>Let’s teach him about forgiveness. That it’s hard to have, but without it we’re a hot mess of a people. So if that kid steals his basketball? Just be cool about it. That kid probably had his reasons we don’t get.</p>
+
+        <p>Let’s teach him to never write anonymous comments on the Internet. Those people are awful. Awful.</p>
+
+        <p>If and when we do get married someday, let’s let the little dude be the ring bearer, because that is fucking adorable and you know it.</p>
+
+        <p>Let’s tell him to hold the door open for every person, ever. To talk to the guy at the grocery store, because it’s fun. Let’s tell him to talk to strangers for the most part, because as long as they’re not in the back of a van? Strangers get a bad rap. They’re the joy of your life and you should talk to as many of them as possible. Don’t listen to Sarah from across the street’s mom. That woman is crazy. (This presumes we live across from a girl named Sarah, whose mom will inevitably be batshit.)</p>
+
+        <p>Let’s tell him to always give a penny if he takes a penny.</p>
+
+        <p>Let’s teach him how to spell his last name at an early age. That name is a mouthful. And while we’re at it, let’s teach him how to spell your name. Why is there a y there? That’s confusing.</p>
+
+        <p>Let’s tell him that if he doesn’t eat salad his ears will fall off. Do you want your ears to fall off? I know, me either, that would really stink. Just take a bite already, we don’t make the rules. We’re just the messengers, man.</p>
+
+        <p>Let’s dress in capes and run into his room alerting him that we have to go adventure and save the world immediately, because that’s what superheroes do. Let’s let him have a bucket o’ swords just like his dad did when he was a kid, and tell him to select one carefully every morning. You never know when you’re going to encounter a dragon, or a nuktuk (something we made up, but he won’t know that. Nuktuks sound horrifying, right?)</p>
+
+        <p>Let’s tell him that it’s okay to like Kanye. He’s an asshole, but he sure is good at making music.</p>
+
+        <p>Let’s tell him it’s perfectly okay to hug other dudes. Manhugs are great. Don’t be shy. They’re life changing.</p>
+
+        <p>Let’s tell him that it’s okay that we celebrate hanukkah and christmas and anything else with presents, because it’s fun and we can be whatever darn religion we want to be. Let’s tell him that he can follow whatever religion he wants to, too. Unless it’s mean. Being mean is a shitty quality, and a Hoolhorst isn’t into that.</p>
+
+        <p>Let’s tell him that Bubbie and Cettie are magic grandma’s that came from the planet Grandmaula and that they hand selected him to be their grandchild because they love him that darn much. If he doesn’t believe that, he’s too smart and he’s onto us.</p>
+
+        <p>Let’s introduce him to Tanner and hope to god they become best friends just like his dad and the Tanman’s mom. Because wouldn’t that be cool? That’d be cool.</p>
+
+        <p>Let’s force Walter and Lilly on him until they became a wolfpack of dog-human companionship that is so adorable that it hurts our faces. Even if Lilly isn’t into it at start, she’ll get over it. Little man needs to know from an early age how important it is to love animals. Unless he wants a snake. Snakes are horrifying, and dad is not letting one into his house, because one time his friend from grade school had a snake and it got out and OH MY GOD, THAT’S HORRIFYING.</p>
+
+        <p>Let’s play music for him everyday. Every last song we’ve ever liked. Let’s sing in the kitchen and the shower and the bath with him, and tell him that it’s something you should never forget to do.</p>
+
+        <p>Let’s teach him how to use his hands to make things, just like his mom. Let’s give him a pen at an early age and teach him how to write on a page just like his dad. Let’s tell him that handwritten things are important, even if everyone is using computers. The handwritten note has more heart. He’ll thank us in high school when he meets the first girl that breaks his heart.</p>
+
+        <p>Let’s play Jurassic Park for him at the earliest age possible. Because dinosaurs.</p>
+
+        <p>Let’s tell him that stars are just jelly beans in the sky.</p>
+
+        <p>Let’s always listen when he talks, even when it annoys us. Let’s pretend that every little thing he says his magic, even if he’s just explaining a stick to us. Let’s always remember what a freaking gift that little man is. That you and I made him together. That he’s us.</p>
+
+        <p>Let’s cook with him and teach him about food. The kind that grows in the ground. And then let’s hope he becomes an amazing chef and baker, just like his momma.</p>
+
+        <p>Let’s reassure him that it’s okay to eat a cheeto from time to time, too. They’re delicious, and we’re sorry we’re not sorry.</p>
+
+        <p>Let’s take him to all of our favorite places. Let’s travel with him and show him the world. Let’s tell him that airplanes are basically spaceships, so everytime we go somewhere we’re just being astronauts. See? A lot cooler now, huh. Boom.</p>
+
+        <p>Let’s laugh when he farts. And cry when he cries sometimes. Let’s teach them that everything is okay, even when it’s not.</p>
+
+        <p>Let’s tell him that we have no idea what we’re doing, and that that’s the best way to do something.</p>
+
+        <p>Let’s teach him that he only likes the Giants, 49ers and Warriors. Let’s tell him that the only people that like the Dodgers are people that smell like poop. Does he want to smell like poop? Yeah. Didn’t think so.</p>
+
+        <p>Let’s dance with him. And make up fake characters like Albert the Alpaca and tell him that they live in our backyard. That HE’S the one who’s been stealing all that semolina flour. Crazy alpacas.</p>
+
+        <p>Let’s tell him that anyone of any color can be his friend and should be his friend. That we like all people, because people are great, no matter what they look or sound like. Have you seen people? They’re awesome.</p>
+
+        <p>Let’s take time sometimes to remind ourselves that it’s okay to be scared that we’re lost and tired in this new life we’re starting. Let’s take some time for ourselves to make each other laugh when no one else is there, and let’s always remember why we fell in love.</p>
+
+        <p>Because even though we’ve had our faults, our screw-ups big and small, we’re bonkers about each other.</p>
+
+        <p>So let’s raise a child, darling. Let’s become parents.</p>
+    </div>
+    <div id="top-left" class="fixed" style="top:40px;left:10px">A</div>
+    <div id="top-right" class="fixed" style="top:40px;right:10px">B</div>
+    <div id="bottom-left" class="fixed" style="bottom:10px;left:10px">C</div>
+    <div id="bottom-right" class="fixed" style="bottom:10px;right:10px">D</div>
+    <div id="nav">ie6fixed demo</div>
+    <div id="sider">sider</div>
+    <div id="mask">mask</div>
+    <div id="dialog">
+        <h4>position width percent value</h4>
+        <p>top: 50%</p>
+        <p>left: 50%</p>
+    </div>
+    <script src="./index.js"></script>
+    <script>
+        ie6fixed(document.getElementById('top-left'), {
+            left: 10,
+            top: 40
+        });
+        ie6fixed(document.getElementById('top-right'), {
+            right: 10,
+            top: 40
+        });
+        ie6fixed(document.getElementById('bottom-left'), {
+            left: 10,
+            bottom: 10
+        });
+        ie6fixed(document.getElementById('bottom-right'), {
+            right: 10,
+            bottom: 10
+        });
+        ie6fixed(document.getElementById('nav'), {
+            top: 0,
+            left: 0,
+            right: 0
+        });
+        ie6fixed(document.getElementById('sider'), {
+            top: 80,
+            bottom: 50,
+            right: 10
+        });
+        ie6fixed(document.getElementById('mask'), {
+            top: 0,
+            bottom: 0,
+            right: 0,
+            left: 0
+        });
+        ie6fixed(document.getElementById('dialog'), {
+            top: '50%',
+            left: '50%'
+        });
+    </script>
+</body>
+</html>
